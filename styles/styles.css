@@ -1,0 +1,88 @@
+/*general styling*/
+html, body {
+	font-family: Helvetica;
+}
+body {
+	overflow: auto;
+}
+h1 {
+	font-size: 75px;
+}
+h3 {
+	font-size: 30px;
+}
+p {
+	font-family: 'Consolas', monospace;
+	font-size: 20px;
+}
+.full-flex-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.centered {
+	margin: auto;
+}
+.subpage {
+	padding-top: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+a {
+	color: #173f5f;
+}
+#home-down {
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	color: black;
+}
+
+/* media queries */
+@media screen and (min-width: 1400px) {
+	.subpage {
+		padding-top: 5%;
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+/* iphone 5, galaxy s5, moto g4 */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		p, a {
+			font-size: 15px;
+		}
+		h1 {
+			font-size: 25px;
+		}
+}
+
+/* iphone 6, 7, 8 and plus*/
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		p, a {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 30px;
+		}
+}
+
+/* iphone X, pixel 2, pixel 2XL */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+		p, a {
+			font-size: 20px;
+		}
+		h1 {
+			font-size: 35px;
+		}
+}
